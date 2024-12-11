@@ -85,10 +85,19 @@ body {
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: var(--title-font-size, 2.5rem);
   font-weight: bold;
-  margin:10;
-  color: #F0FFFF;
-  margin-top:10px;
+  margin: var(--title-margin, 10px);
+  color: var(--title-color, #F0FFFF);
+  letter-spacing: var(--title-letter-spacing, 1px);
+  margin-top: var(--title-margin-top, 10px);
 }
 
+.subtitle {
+  font-size: var(--subtitle-font-size, 1rem);
+  margin: var(--subtitle-margin, 10px);
+  color: var(--subtitle-color, #F0FFFF);
+  letter-spacing: var(--subtitle-letter-spacing, 2.5px);
+  margin-top: var(--subtitle-margin-top, 2px);
+  margin-bottom: var(--subtitle-margin-bottom, 5px);
+}
